@@ -67,6 +67,42 @@
       transition: all 0.05s;
       transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
     }
+
+	      .second-hand{
+        
+        animation-name: handanimation;
+        animation-duration: 60s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        background-color: green;
+    }
+
+    .min-hand{
+        animation-name: handanimation;
+        animation-duration: 3600s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        background-color: blue;
+        height: 8px;
+    }
+
+    .hour-hand{
+        animation-name: handanimation;
+        animation-duration: 216000s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        background-color: red;
+        height: 10px;
+    }
+
+    @keyframes handanimation {
+        from{
+            transform: rotate(90deg);
+        }
+        to{
+            transform: rotate(450deg);
+        }
+    }
 </style>
 
 <script src="./script.js"></script>
